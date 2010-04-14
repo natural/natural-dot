@@ -37,12 +37,16 @@ fi
 export PAGER MANPAGER
 
 
+## grep
+#
+export GREP_OPTIONS="--color=auto --binary-files=without-match --directories=skip"
+
+
 ## aliases
 #
 alias df="df -H"
 alias ll="ls -lh --color=auto --group-directories-first"
 alias l.="ls -d .*"
-alias grep="grep --color=auto"
 
 
 ## completion
