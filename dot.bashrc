@@ -66,14 +66,12 @@ test -z "$PS1" && return
 
 ## prompt
 #
-case "$TERM" in
-xterm-256color)
+if [ "$TERM" == "xterm-256color" ] || [ "$COLORTERM" == "gnome-terminal" ]
+then
     PS1='\[\033[01;32m\]\u@\h:\[\033[00m\]\[\033[01;34m\]\w \[\033[00m\] '
-    ;;
-*)
+else
     PS1='\u@\h:\w '
-    ;;
-esac
+fi
 
 
 ## simplify prompt if running within emacs
