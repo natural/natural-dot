@@ -21,8 +21,8 @@ export HISTSIZE=1000000
 
 ## path
 #
-PATH="$PATH:/sbin:/usr/sbin"
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+PATH="$PATH:/sbin:/usr/sbin:$HOME/bin:$HOME/.local/bin"
+
 
 
 ## pager
