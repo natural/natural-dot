@@ -2,7 +2,7 @@
 
 ## keychain
 #
-/usr/bin/keychain -q  ~/.ssh/*.dsa
+/usr/bin/keychain ~/.ssh/*.dsa
 source ~/.keychain/$HOSTNAME-sh
 
 
