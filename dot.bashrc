@@ -47,6 +47,9 @@ export GREP_OPTIONS="--color=auto --binary-files=without-match --directories=ski
 alias df="df -H"
 alias ll="ls -lh --color=auto --group-directories-first"
 alias l.="ls -d .*"
+cdpy () {
+    cd `whichpy "$1" | xargs dirname | xargs`
+}
 
 
 ## completion

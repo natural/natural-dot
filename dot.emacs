@@ -70,6 +70,14 @@
     (erase-buffer)))
 
 
+;;
+;
+(if (and (daemonp) (locate-library "edit-server"))
+    (progn
+      (require 'edit-server)
+      (edit-server-start)))
+
+
 ;; editor configuration
 ;
 (setq frame-background-mode 'dark)
@@ -115,7 +123,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "unknown" :family "Inconsolata"))))
+ '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width condensed :foundry "unknown" :family "Anka/Coder Narrow"))))
  '(antlr-keyword ((t (:inherit font-lock-keyword-face :foreground "#B09378"))))
  '(antlr-ruledef ((t (:inherit font-lock-function-name-face :foreground "#587EB0"))))
  '(antlr-tokenref ((t (:inherit font-lock-type-face :foreground "#ffc080"))))
