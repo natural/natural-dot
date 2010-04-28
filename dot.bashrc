@@ -42,6 +42,11 @@ export PAGER MANPAGER
 export GREP_OPTIONS="--color=auto --binary-files=without-match --directories=skip"
 
 
+## other exports
+#
+export BROWSER=/usr/bin/google-chrome
+
+
 ## aliases
 #
 alias df="df -H"
