@@ -21,7 +21,7 @@ export HISTSIZE=1000000
 
 ## path
 #
-PATH="$PATH:/sbin:/usr/sbin:$HOME/bin:$HOME/.local/bin"
+PATH="$PATH:/sbin:/usr/sbin:$HOME/src/natural-bin:$HOME/.local/bin"
 
 
 
@@ -57,10 +57,10 @@ cdpy () {
 test -r /etc/bash_completion && . /etc/bash_completion
 
 
-## local files if available
+## local environment variables if available
 #
-test -r $HOME/.local.python && . $HOME/.local.python
-test -r $HOME/.local.java && . $HOME/.local.java
+test -r $HOME/.local.env && . $HOME/.local.env
+
 
 ## exit if not interactive
 #
