@@ -42,10 +42,19 @@ export PAGER MANPAGER
 export GREP_OPTIONS="--color=auto --binary-files=without-match --directories=skip"
 
 
+## other exports
+#
+export BROWSER=/usr/bin/google-chrome
+
+
 ## aliases
 #
 alias df="df -H"
-alias ll="ls -lh --color=auto --group-directories-first"
+if [ "$UNAME" != "Darwin" ]; then
+    alias ll="ls -lh --color=auto --group-directories-first"
+else
+    alias ll="ls -lh"
+fi
 alias l.="ls -d .*"
 cdpy () {
     cd `whichpy "$1" | xargs dirname | xargs`
@@ -89,8 +98,10 @@ fi
 ## dircolors
 #
 if [ "$TERM" != "dumb" ]; then
-    eval "`dircolors -b`"
-    alias ls="ls --color=auto"
+    if [ "$UNAME" != "Darwin" ]; then
+	eval "`dircolors -b`"
+	alias ls="ls --color=auto"
+    fi
 fi
 
 
