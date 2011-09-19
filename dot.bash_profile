@@ -2,8 +2,8 @@
 
 ## keychain
 #
-/usr/bin/keychain ~/.ssh/*.dsa
-source ~/.keychain/$HOSTNAME-sh
+#/usr/bin/keychain ~/.ssh/*.dsa
+#source ~/.keychain/$HOSTNAME-sh
 
 
 ## startup

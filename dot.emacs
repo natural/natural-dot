@@ -2,12 +2,14 @@
 ;
 (add-to-list 'load-path "~/.emacs.d/")
 
-
 (require 'python-mode)
 (autoload 'pymacs-load  "pymacs" nil t)
 (autoload 'pymacs-eval  "pymacs" nil t)
 (autoload 'pymacs-apply "pymacs")
 (autoload 'pymacs-call  "pymacs")
+
+(setq ipython-command "/some-path/ipython")
+(require 'ipython)
 
 (setq interpreter-mode-alist
     (cons '("python" . python-mode) interpreter-mode-alist))
@@ -15,7 +17,7 @@
 (setq python-mode-hook
     '(lambda () (progn
                     ;;(set-variable 'py-python-command "/usr/bin/python2.5")
-		    (set-variable 'py-python-command "/usr/bin/ipython")
+		    (set-variable 'py-python-command "/usr/local/bin/ipython")
 		    (c-subword-mode 1)
 		    (outline-setup "^class \\|[   ]*def \\|^#")
                     (set-variable 'py-indent-offset 4)
@@ -113,10 +115,14 @@
  '(c-basic-offset 4)
  '(c-insert-tab-function (quote insert-tab))
  '(c-syntactic-indentation nil)
+ '(gud-gdb-command-name "gdb --annotate=1")
  '(indent-tabs-mode t)
  '(inhibit-startup-screen t)
+ '(ipython-command "/usr/local/bin/ipython")
+ '(large-file-warning-threshold nil)
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
+ '(py-python-command "/usr/local/bin/ipython")
  '(sgml-basic-offset 4)
  '(show-trailing-whitespace t)
  '(w3m-default-display-inline-images t)
@@ -126,7 +132,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "apple" :family "Monospace"))))
+ '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "apple" :family "Monaco"))))
  '(antlr-keyword ((t (:inherit font-lock-keyword-face :foreground "#B09378"))))
  '(antlr-ruledef ((t (:inherit font-lock-function-name-face :foreground "#587EB0"))))
  '(antlr-tokenref ((t (:inherit font-lock-type-face :foreground "#ffc080"))))
