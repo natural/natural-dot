@@ -1,5 +1,8 @@
 ;; python
 ;
+(add-to-list 'load-path "~/.emacs.d/")
+
+
 (require 'python-mode)
 (autoload 'pymacs-load  "pymacs" nil t)
 (autoload 'pymacs-eval  "pymacs" nil t)
@@ -91,11 +94,11 @@
 (column-number-mode t)
 (transient-mark-mode t)
 (menu-bar-mode nil)
-(tool-bar-mode nil)
-(scroll-bar-mode nil)
+;;(tool-bar-mode nil)
+;;(scroll-bar-mode nil)
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
-(fringe-mode nil)
+;;(fringe-mode nil)
 (blink-cursor-mode nil)
 
 
@@ -123,7 +126,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width condensed :foundry "unknown" :family "Anka/Coder Narrow"))))
+ '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "apple" :family "Monospace"))))
  '(antlr-keyword ((t (:inherit font-lock-keyword-face :foreground "#B09378"))))
  '(antlr-ruledef ((t (:inherit font-lock-function-name-face :foreground "#587EB0"))))
  '(antlr-tokenref ((t (:inherit font-lock-type-face :foreground "#ffc080"))))
@@ -147,9 +150,9 @@
  '(mode-line-buffer-id ((t (:foreground "#1E90FF"))))
  '(mode-line-emphasis ((t nil)))
  '(mode-line-inactive ((t (:background "#000000" :foreground "#505050" :box (:line-width -1 :color "#909090")))))
- '(py-builtins-face ((t (:foreground "#98ff7c"))) t)
- '(py-decorators-face ((t (:foreground "#ff4500"))) t)
- '(py-pseudo-keyword-face ((t (:foreground "#6caad9"))) t)
+ '(py-builtins-face ((t (:foreground "#98ff7c"))))
+ '(py-decorators-face ((t (:foreground "#ff4500"))))
+ '(py-pseudo-keyword-face ((t (:foreground "#6caad9"))))
  '(region ((((class color) (min-colors 88) (background dark)) (:background "#1874CD" :foreground "#ffffff"))))
  '(trailing-whitespace ((((class color) (background dark)) (:background "#303030")))))
 
