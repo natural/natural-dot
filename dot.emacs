@@ -116,7 +116,7 @@
  '(c-insert-tab-function (quote insert-tab))
  '(c-syntactic-indentation nil)
  '(gud-gdb-command-name "gdb --annotate=1")
- '(indent-tabs-mode t)
+ '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(ipython-command "/usr/local/bin/ipython")
  '(large-file-warning-threshold nil)
@@ -160,6 +160,7 @@
  '(py-decorators-face ((t (:foreground "#ff4500"))))
  '(py-pseudo-keyword-face ((t (:foreground "#6caad9"))))
  '(region ((((class color) (min-colors 88) (background dark)) (:background "#1874CD" :foreground "#ffffff"))))
+ '(scroll-bar ((t (:foreground "red"))))
  '(trailing-whitespace ((((class color) (background dark)) (:background "#303030")))))
 
 
