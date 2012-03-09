@@ -1,0 +1,12 @@
+[submodule "emacs.d/vendor/coffee-mode"]
+	path = emacs.d/vendor/coffee-mode
+	url = https://github.com/defunkt/coffee-mode.git
+[submodule "emacs.d/vendor/js2-mode"]
+	path = emacs.d/vendor/js2-mode
+	url = https://github.com/mooz/js2-mode.git
+[submodule "emacs.d/vendor/markdown-mode"]
+	path = emacs.d/vendor/markdown-mode
+	url = https://github.com/defunkt/markdown-mode.git
+[submodule "emacs.d/vendor/yaml-mode"]
+	path = emacs.d/vendor/yaml-mode
+	url = https://github.com/yoshiki/yaml-mode.git
