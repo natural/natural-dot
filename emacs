@@ -1,5 +1,6 @@
 ;; python
 ;
+(setq-default fill-column 119)
 (add-to-list 'load-path "~/.emacs.d/")
 
 (require 'python-mode)
