@@ -1,10 +1,16 @@
 ;; python
 ;
+(setq-default fill-column 119)
+(add-to-list 'load-path "~/.emacs.d/")
+
 (require 'python-mode)
 (autoload 'pymacs-load  "pymacs" nil t)
 (autoload 'pymacs-eval  "pymacs" nil t)
 (autoload 'pymacs-apply "pymacs")
 (autoload 'pymacs-call  "pymacs")
+
+(setq ipython-command "/some-path/ipython")
+(require 'ipython)
 
 (setq interpreter-mode-alist
     (cons '("python" . python-mode) interpreter-mode-alist))
@@ -12,7 +18,7 @@
 (setq python-mode-hook
     '(lambda () (progn
                     ;;(set-variable 'py-python-command "/usr/bin/python2.5")
-		    (set-variable 'py-python-command "/usr/bin/ipython")
+		    (set-variable 'py-python-command "/usr/local/bin/ipython")
 		    (c-subword-mode 1)
 		    (outline-setup "^class \\|[   ]*def \\|^#")
                     (set-variable 'py-indent-offset 4)
@@ -91,11 +97,11 @@
 (column-number-mode t)
 (transient-mark-mode t)
 (menu-bar-mode nil)
-(tool-bar-mode nil)
-(scroll-bar-mode nil)
+;;(tool-bar-mode nil)
+;;(scroll-bar-mode nil)
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
-(fringe-mode nil)
+;;(fringe-mode nil)
 (blink-cursor-mode nil)
 
 
@@ -110,10 +116,14 @@
  '(c-basic-offset 4)
  '(c-insert-tab-function (quote insert-tab))
  '(c-syntactic-indentation nil)
- '(indent-tabs-mode t)
+ '(gud-gdb-command-name "gdb --annotate=1")
+ '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
+ '(ipython-command "/usr/local/bin/ipython")
+ '(large-file-warning-threshold nil)
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
+ '(py-python-command "/usr/local/bin/ipython")
  '(sgml-basic-offset 4)
  '(show-trailing-whitespace t)
  '(w3m-default-display-inline-images t)
@@ -123,7 +133,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width condensed :foundry "unknown" :family "Anka/Coder Narrow"))))
+ '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "apple" :family "Monaco"))))
  '(antlr-keyword ((t (:inherit font-lock-keyword-face :foreground "#B09378"))))
  '(antlr-ruledef ((t (:inherit font-lock-function-name-face :foreground "#587EB0"))))
  '(antlr-tokenref ((t (:inherit font-lock-type-face :foreground "#ffc080"))))
@@ -147,10 +157,11 @@
  '(mode-line-buffer-id ((t (:foreground "#1E90FF"))))
  '(mode-line-emphasis ((t nil)))
  '(mode-line-inactive ((t (:background "#000000" :foreground "#505050" :box (:line-width -1 :color "#909090")))))
- '(py-builtins-face ((t (:foreground "#98ff7c"))) t)
- '(py-decorators-face ((t (:foreground "#ff4500"))) t)
- '(py-pseudo-keyword-face ((t (:foreground "#6caad9"))) t)
+ '(py-builtins-face ((t (:foreground "#98ff7c"))))
+ '(py-decorators-face ((t (:foreground "#ff4500"))))
+ '(py-pseudo-keyword-face ((t (:foreground "#6caad9"))))
  '(region ((((class color) (min-colors 88) (background dark)) (:background "#1874CD" :foreground "#ffffff"))))
+ '(scroll-bar ((t (:foreground "red"))))
  '(trailing-whitespace ((((class color) (background dark)) (:background "#303030")))))
 
 
