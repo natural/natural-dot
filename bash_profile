@@ -2,7 +2,7 @@
 
 ## keychain
 #
-keychain ~/.ssh/*.dsa
+keychain ~/.ssh/*dsa ~/.ssh/*rsa
 source ~/.keychain/$HOSTNAME-sh
 
 
