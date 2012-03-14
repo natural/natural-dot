@@ -9,6 +9,7 @@
 (load "natural/defuns")
 ;; (load "natural/bindings")
 (load "natural/tabs")
+(load "natural/desktop")
 (load "natural/disabled")
 (load "natural/fonts")
 (load "natural/utf-8")
