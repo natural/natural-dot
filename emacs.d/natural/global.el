@@ -68,7 +68,7 @@
   "kill all buffers, leaving *scratch* only"
   (interactive)
   (mapcar (lambda (x) (kill-buffer x))
-	      (buffer-list))
+        (buffer-list))
   (delete-other-windows))
 
 (defun eshell/clear ()
@@ -78,3 +78,5 @@
 
 
 (set-default 'truncate-lines t)
+
+(menu-bar-mode 0)

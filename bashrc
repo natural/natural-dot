@@ -64,6 +64,9 @@ cdpy () {
 ## completion
 #
 test -r /etc/bash_completion && . /etc/bash_completion
+if [ -f /opt/local/etc/bash_completion ]; then
+. /opt/local/etc/bash_completion
+fi
 
 
 ## local environment variables if available
@@ -80,7 +83,11 @@ test -z "$PS1" && return
 #
 if [ "$TERM" == "xterm-256color" ] || [ "$COLORTERM" == "gnome-terminal" ]
 then
-    PS1='\[\033[01;32m\]\u@\h:\[\033[00m\]\[\033[01;34m\]\w \[\033[00m\] '
+    if [ "$UNAME" != "Darwin" ]; then
+        PS1='\[\033[01;32m\]\u@\h:\[\033[00m\]\[\033[01;34m\]\w \[\033[00m\] '
+    else
+        PS1='\[\033[01;30m\]\u@\h:\[\033[00m\]\[\033[00;31m\]\w \[\033[00m\] '
+    fi
 else
     PS1='\u@\h:\w '
 fi
@@ -99,8 +106,11 @@ fi
 #
 if [ "$TERM" != "dumb" ]; then
     if [ "$UNAME" != "Darwin" ]; then
-	eval "`dircolors -b`"
-	alias ls="ls --color=auto"
+        eval "`dircolors -b`"
+        alias ls="ls --color=auto"
+    else
+        export CLICOLOR=1
+        export LSCOLORS=ExFxCxDxBxegedabagacad
     fi
 fi
 
@@ -117,4 +127,3 @@ shopt -s extglob
 _expand() {
     return 0
 }
-

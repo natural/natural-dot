@@ -10,3 +10,12 @@
 [submodule "emacs.d/vendor/yaml-mode"]
 	path = emacs.d/vendor/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode.git
+[submodule "emacs.d/vendor/python-mode"]
+	path = emacs.d/vendor/python-mode
+	url = https://github.com/emacsmirror/python-mode.git
+[submodule "emacs.d/vendor/magit-mode"]
+	path = emacs.d/vendor/magit-mode
+	url = https://github.com/magit/magit.git
+[submodule "emacs.d/vendor/magit"]
+	path = emacs.d/vendor/magit
+	url = https://github.com/magit/magit.git
