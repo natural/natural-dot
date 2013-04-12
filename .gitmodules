@@ -19,3 +19,6 @@
 [submodule "emacs.d/vendor/magit"]
 	path = emacs.d/vendor/magit
 	url = https://github.com/magit/magit.git
+[submodule "emacs.d/vendor/jade-mode"]
+	path = emacs.d/vendor/jade-mode
+	url = https://github.com/brianc/jade-mode.git

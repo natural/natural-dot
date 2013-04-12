@@ -7,7 +7,7 @@
 (load "natural/env")
 (load "natural/global")
 (load "natural/defuns")
-;; (load "natural/bindings")
+(load "natural/bindings")
 (load "natural/tabs")
 (load "natural/desktop")
 (load "natural/disabled")
@@ -38,7 +38,7 @@
 (vendor 'markdown-mode 'markdown-mode)
 (vendor 'python-mode)
 (vendor 'lambda-mode)
-
+(vendor 'jade-mode)
 
 ;;(vendor 'csv-mode      'csv-mode)
 ;;(vendor 'yaml-mode     'yaml-mode)

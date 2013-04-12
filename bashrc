@@ -21,7 +21,7 @@ export HISTSIZE=1000000
 
 ## path
 #
-PATH="$PATH:/sbin:/usr/sbin:$HOME/src/natural-bin:$HOME/.local/bin:$HOME/lib/node_modules/.bin"
+PATH="$PATH:/sbin:/usr/sbin:$HOME/src/natural-bin:$HOME/.local/bin"
 
 
 
