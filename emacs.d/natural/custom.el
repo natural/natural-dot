@@ -1,10 +1,10 @@
 ;; added by Custom
 ;
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(browse-url-browser-function (quote browse-url-kde))
  '(c-basic-offset 4)
  '(c-insert-tab-function (quote insert-tab))
@@ -26,11 +26,11 @@
  '(w3m-default-display-inline-images t)
  '(w3m-use-toolbar nil))
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "apple" :family "DejaVu Sans Mono"))))
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:stipple nil :background "#131313" :foreground "#cccccc" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Andale Mono"))))
  '(antlr-keyword ((t (:inherit font-lock-keyword-face :foreground "#B09378"))))
  '(antlr-ruledef ((t (:inherit font-lock-function-name-face :foreground "#587EB0"))))
  '(antlr-tokenref ((t (:inherit font-lock-type-face :foreground "#ffc080"))))
@@ -43,20 +43,25 @@
  '(font-lock-comment-face ((((class color) (min-colors 88) (background dark)) (:foreground "#999999"))))
  '(font-lock-constant-face ((((class color) (min-colors 88) (background dark)) (:foreground "#FFFFCD" :weight bold))))
  '(font-lock-function-name-face ((((class color) (min-colors 88) (background dark)) (:foreground "#80c0ff" :weight bold))))
- '(font-lock-keyword-face ((((class color) (min-colors 88) (background dark)) (:foreground "#f2e180" :weight bold))))
- '(font-lock-string-face ((((class color) (min-colors 88) (background dark)) (:foreground "#85A562"))))
+ '(font-lock-keyword-face ((((class color) (min-colors 88) (background dark)) (:foreground "#A28ABC" :weight bold))))
+ '(font-lock-string-face ((((class color) (min-colors 88) (background dark)) (:foreground "#64A6A5"))))
  '(font-lock-type-face ((((class color) (min-colors 88) (background dark)) (:foreground "#7AB5DB"))))
+ '(font-lock-variable-name-face ((t (:foreground "#A6A564"))))
  '(fringe ((((class color) (background dark)) (:background "#000000"))))
+ '(ido-subdir ((t (:foreground "#6c71c4"))))
  '(isearch ((((class color) (min-colors 88) (background dark)) (:background "#ff4500" :foreground "#ffffff"))))
  '(lazy-highlight ((((class color) (min-colors 88) (background dark)) (:background "#caff70" :foreground "black"))))
- '(link ((((class color) (min-colors 88) (background dark)) (:foreground "#1E90FF" :underline t))))
- '(minibuffer-prompt ((((background dark)) (:foreground "#1E90FF"))))
- '(mode-line ((((class color) (min-colors 88)) (:background "#000000" :foreground "#ffffff" :box (:line-width -1 :color "#1E90FF")))))
- '(mode-line-buffer-id ((t (:foreground "#1E90FF"))))
+ '(link ((((class color) (min-colors 88) (background dark)) (:foreground "#7AB5DB" :underline t))))
+ '(magit-branch ((t (:inherit magit-header :background "#202020" :foreground "#A28ABC"))))
+ '(magit-item-highlight ((t (:inherit highlight :foreground "#64A6A5"))))
+ '(magit-log-sha1 ((t (:foreground "#64A6A5"))))
+ '(magit-section-title ((t (:inherit font-lock-comment-face))))
+ '(minibuffer-prompt ((((background dark)) (:foreground "#7AB5DB"))))
+ '(mode-line ((t (:background "#131313" :foreground "#ffffff" :box (:line-width -1 :color "#303030")))))
+ '(mode-line-buffer-id ((t (:foreground "#7AB5DB"))))
  '(mode-line-emphasis ((t nil)))
- '(mode-line-inactive ((t (:background "#000000" :foreground "#505050" :box (:line-width -1 :color "#909090")))))
- '(py-XXX-tag-face ((t (:foreground "cornflower blue"))))
+ '(mode-line-inactive ((t (:background "#101010" :foreground "#505050" :box (:line-width -1 :color "#101010")))))
  '(py-decorators-face ((t (:inherit font-lock-keyword-face :foreground "OrangeRed"))))
- '(region ((((class color) (min-colors 88) (background dark)) (:background "#1874CD" :foreground "#ffffff"))))
+ '(region ((((class color) (min-colors 88) (background dark)) (:background "#7AB5DB" :foreground "#191919"))))
  '(scroll-bar ((t (:foreground "red"))))
  '(trailing-whitespace ((((class color) (background dark)) (:background "#303030")))))
