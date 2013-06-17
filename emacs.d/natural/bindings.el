@@ -42,7 +42,7 @@
 ;; (global-set-key (kbd "M-0") 'delete-window) ; was digit-argument
 ;; (global-set-key (kbd "M-o") 'other-window) ; was facemenu-keymap
 
-;; (global-set-key (kbd "M-O") 'rotate-windows)
+(global-set-key (kbd "M-O") 'rotate-windows)
 
 ;; ;; Replace dired's M-o
 ;; (add-hook 'dired-mode-hook (lambda () (define-key dired-mode-map (kbd "M-o") 'other-window))) ; was dired-omit-mode
@@ -65,13 +65,13 @@
 ;; (global-set-key (kbd "M-a") 'mark-whole-buffer) ; was backward-sentence.
 
 ;; ;; Find matching parens
-;; (global-set-key (kbd "C-'") 'match-paren)
+(global-set-key (kbd "C-'") 'match-paren)
 
 ;; ;; Easy inserts
 ;; (global-set-key (kbd "C-.") 'insert-arrow)
 
 ;; ;; ibuffer > list-buffers
-;; (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; ;; Easier buffer killing
 ;; (global-unset-key (kbd "M-k"))

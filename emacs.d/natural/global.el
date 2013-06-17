@@ -19,10 +19,10 @@
 
 ;; Modeline info
 (display-time-mode 1)
-;; (display-battery-mode 1)
+(display-battery-mode 1)
 
 ;; Small fringes
-;; (set-fringe-mode '(1 . 1))
+(set-fringe-mode '(1 . 1))
 
 ;; Emacs gurus don't need no stinking scroll bars
 (when (fboundp 'toggle-scroll-bar)
@@ -48,7 +48,7 @@
 (setq truncate-partial-width-windows nil)
 
 ;; For emacsclient
-(server-start)
+;; (server-start)
 
 ;; Trailing whitespace is unnecessary
 (add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
@@ -71,6 +71,14 @@
         (buffer-list))
   (delete-other-windows))
 
+
+(save-current-buffer
+  "load a cheat sheet into a temp. buffer"
+  (if (file-readable-p "~/.emacs.d/cheats.txt")
+    (progn
+      (set-buffer (get-buffer-create "*cheats*"))
+        (insert-file-contents "~/.emacs.d/cheats.txt"))))
+
 (defun eshell/clear ()
   (interactive)
   (let ((inhibit-read-only t))
@@ -79,4 +87,4 @@
 
 (set-default 'truncate-lines t)
 
-(menu-bar-mode 0)
+(menu-bar-mode 1)

@@ -30,6 +30,7 @@
 (load "natural/shell-mode")
 (load "natural/python-mode")
 (load "natural/private" 'noerror)
+(load "natural/package" 'noerror)
 ;; (load "natural/hl-line")
 ;; (load "natural/iswitchb")
 

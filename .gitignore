@@ -1,3 +1,6 @@
 *~
 /ipython/history
 /ipython/profile_default/startup/README
+emacs.d/elpa/
+emacs.d/bookmarks
+emacs.d/url/cookies
