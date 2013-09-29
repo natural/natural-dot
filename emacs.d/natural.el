@@ -3,6 +3,8 @@
 (setq custom-file "~/.emacs.d/natural/custom.el")
 (load custom-file 'noerror)
 
+
+
 ;; (load "natural/theme")
 (load "natural/env")
 (load "natural/global")
@@ -40,6 +42,7 @@
 (vendor 'python-mode)
 (vendor 'lambda-mode)
 (vendor 'jade-mode)
+(vendor 'ag)
 
 ;; (vendor 'csv-mode      'csv-mode)
 ;; (vendor 'yaml-mode     'yaml-mode)
@@ -73,3 +76,5 @@
 ;; (vendor 'ruby-electric 'ruby-electric-mode)
 ;; (vendor 'auctex)
 ;; (setq py-install-directory "vendor/python-mode/")
+
+

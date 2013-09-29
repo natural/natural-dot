@@ -22,7 +22,7 @@
 (display-battery-mode 1)
 
 ;; Small fringes
-(set-fringe-mode '(1 . 1))
+;;(set-fringe-mode '(1 . 1))
 
 ;; Emacs gurus don't need no stinking scroll bars
 (when (fboundp 'toggle-scroll-bar)
@@ -51,7 +51,13 @@
 ;; (server-start)
 
 ;; Trailing whitespace is unnecessary
+
+;; FUCK YOU LAZY ASS BITCH 'PROGRAMMERS' AND YO SHITTY ASS
+;; EDITORS THAT DO STUPID SHIT AND LEAVE UR STUPID FUCKIN
+;; SOURCE FILES ALL TRASHY LIKE UR GHETTO ASS DESIGNS.
 (add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
+;; (and that comment made me feel so much better.  therapy, yo)
+
 
 ;; Trash can support
 (setq delete-by-moving-to-trash t)
@@ -60,6 +66,9 @@
 (setq-default ispell-program-name "aspell")
 (setq ispell-list-command "list")
 (setq ispell-extra-args '("--sug-mode=ultra"))
+
+;; yup
+;; (require 'bookmark+)
 
 ;; zap-up-to-char, forward-to-word, backward-to-word, etc
 (require 'misc)
@@ -88,3 +97,12 @@
 (set-default 'truncate-lines t)
 
 (menu-bar-mode 1)
+
+
+(font-lock-add-keywords 'coffee-mode
+  '(("\\<\\(FIXME\\):" 1 font-lock-warning-face prepend)
+    ("\\<\\(exports\\)\\." 1 font-lock-builtin-face)
+    ("\\<\\(require\\) " 1 font-lock-builtin-face)
+    ("JSON\\." . font-lock-builtin-face)
+  )
+)

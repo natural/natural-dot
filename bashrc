@@ -1,5 +1,3 @@
-
-
 ## basics
 #
 : ${HOME=~}
@@ -21,7 +19,7 @@ export HISTSIZE=1000000
 
 ## path
 #
-PATH="$PATH:/sbin:/usr/sbin:$HOME/src/natural-bin:$HOME/.local/bin"
+PATH="$PATH:./node_modules/.bin:/sbin:/usr/sbin:$HOME/src/natural-bin:$HOME/.local/bin:/usr/local/share/npm/bin"
 
 
 
