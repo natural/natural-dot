@@ -19,7 +19,7 @@
 
 ;; Modeline info
 (display-time-mode 1)
-(display-battery-mode 1)
+;; (display-battery-mode 1)
 
 ;; Small fringes
 (set-fringe-mode '(1 . 1))
@@ -55,7 +55,7 @@
 ;; FUCK YOU LAZY ASS BITCH 'PROGRAMMERS' AND YO SHITTY ASS
 ;; EDITORS THAT DO STUPID SHIT AND LEAVE UR STUPID FUCKIN
 ;; SOURCE FILES ALL TRASHY LIKE UR GHETTO ASS DESIGNS.
-(add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
+;; (add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
 ;; (and that comment made me feel so much better.  therapy, yo)
 
 
@@ -96,7 +96,7 @@
 
 (set-default 'truncate-lines t)
 
-(menu-bar-mode 1)
+(menu-bar-mode 0)
 
 
 (font-lock-add-keywords 'coffee-mode
@@ -106,3 +106,9 @@
     ("JSON\\." . font-lock-builtin-face)
   )
 )
+
+
+
+(defun set-tabs-makefile-hook () (setq indent-tabs-mode t))
+(add-hook 'makefile-mode-hook 'set-tabs-makefile-hook)
+

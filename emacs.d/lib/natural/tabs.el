@@ -1,7 +1,7 @@
 ;;; Tab management
 
 ;; Spaces instead of tabs
-(setq-default indent-tabs-mode nil)
+;; (setq-default indent-tabs-mode nil)
 
 ;; If there is a tab, make it the size of 2 spaces
 (setq-default tab-width 2)
@@ -62,4 +62,4 @@
     (indent-for-tab-command)))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(global-set-key (kbd "TAB") 'smart-tab)
+;; (global-set-key (kbd "TAB") 'smart-tab)
