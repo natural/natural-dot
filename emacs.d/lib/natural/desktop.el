@@ -1,5 +1,0 @@
-(desktop-save-mode 1)
-(add-to-list 'desktop-globals-to-save 'file-name-history)
-(setq desktop-path '("~/"))
-(setq desktop-dirname "~/")
-;; (setq desktop-base-file-name "desktop")

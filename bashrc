@@ -37,12 +37,14 @@ export PAGER MANPAGER
 
 ## grep
 #
-export GREP_OPTIONS="--color=auto --binary-files=without-match --directories=skip"
+# export GREP_OPTIONS="--color=auto --binary-files=without-match --directories=skip"
 
 
 ## other exports
 #
-export BROWSER=/usr/bin/google-chrome
+export BROWSER=/usr/bin/google-chrome-stable
+export EDITOR=/usr/bin/emacs
+# export CHROMIUM_USER_FLAGS="--force-device-scale-factor=0.5"
 
 
 ## aliases
@@ -82,7 +84,7 @@ test -z "$PS1" && return
 if [ "$TERM" == "xterm-256color" ] || [ "$COLORTERM" == "gnome-terminal" ]
 then
     if [ "$UNAME" != "Darwin" ]; then
-        PS1='\[\033[01;32m\]\u@\h:\[\033[00m\]\[\033[01;34m\]\w \[\033[00m\] '
+        PS1='\[\033[01;32m\]\u@\h:\[\033[00m\]\[\033[01;34m\]\w \[\033[00m\]'
     else
         PS1='\[\033[01;30m\]\u@\h:\[\033[00m\]\[\033[00;31m\]\w \[\033[00m\] '
     fi
@@ -125,3 +127,9 @@ shopt -s extglob
 _expand() {
     return 0
 }
+source ~/.autoenv/activate.sh
+
+#
+#
+keychain ~/.ssh/*dsa
+

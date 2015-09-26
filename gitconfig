@@ -1,0 +1,5 @@
+[user]
+	email = troy@troy.io
+	name = Troy Melhase
+[push]
+	default = current
