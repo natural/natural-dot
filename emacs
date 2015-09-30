@@ -95,7 +95,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#201f1f" :foreground "#d4d2cf" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight light :height 125 :width ultra-condensed :foundry "unknown" :family "Input Mono Condensed"))))
+ '(default ((t (:inherit nil :stipple nil :background "#201f1f" :foreground "#d4d2cf" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight light :height 100 :width condensed :foundry "unknown" :family "Input Mono Condensed"))))
  '(ag-hit-face ((t (:foreground "tomato"))))
  '(ag-match-face ((t (:foreground "yellow"))))
  '(border ((t (:background "red"))))
