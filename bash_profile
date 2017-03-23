@@ -6,9 +6,7 @@ parse_git_branch() {
 }
 
 
-keychain ~/.ssh/*dsa
-
-
-source ~/.keychain/$HOSTNAME-sh
-source ~/.bashrc
-source ~/.git-completion.sh
+# keychain ~/.ssh/*dsa
+# source ~/.keychain/$HOSTNAME-sh
+# source ~/.bashrc
+# source ~/.git-completion.sh
